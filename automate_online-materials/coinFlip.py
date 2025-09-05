@@ -1,6 +1,6 @@
 import random
 heads = 0
-for i in range(1, 1001):
+for i in range(1, 2001):
     if random.randint(0, 1) == 1:
         heads = heads + 1
     if i == 500:

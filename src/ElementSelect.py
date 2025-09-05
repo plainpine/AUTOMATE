@@ -1,0 +1,16 @@
+import bs4
+exampleFile = open('example.html')
+exampleSoup = bs4.BeautifulSoup(exampleFile.read(), 'html.parser')
+elems = exampleSoup.select('#author')
+type(elems)
+print(type(elems))
+len(elems)
+print(len(elems))
+type(elems[0])
+print(type(elems[0]))
+elems[0].getText()
+print(elems[0].getText())
+str(elems[0])
+print(str(elems[0]))
+elems[0].attrs
+print(elems[0].attrs)
